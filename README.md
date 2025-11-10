@@ -18,3 +18,7 @@
 1. **Group and User Creation:** Created the `app_team` group and the dedicated system user `app_user` (`-g app_team`).
 2. **Security and Ownership:** Set the ownership of the LVM mount point (`/srv/appdata`) to `app_user:app_team` and applied restrictive permissions (`chmod 770`).
 3. **Verification:** Confirmed only the owner and group have read/write/execute permissions: `drwxrwx---`. **[View Output in task3-user-mgmt.txt]**
+## Package Management and System Maintenance
+### Objective: Demonstrate capability to install, update, and secure system packages.
+1. **Installation (`apt update/install`):** Installed the utility `tree` to verify package management functionality.
+2. **Security Verification:** Used `tree /srv/appdata` to intentionally trigger a permission error, confirming the `770` security controls set in the previous section are effective. **[View Output in task4-package-mgmt.txt]**

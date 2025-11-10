@@ -1,0 +1,4 @@
+tree /srv/appdata
+/srv/appdata  [error opening dir]
+
+0 directories, 0 files
