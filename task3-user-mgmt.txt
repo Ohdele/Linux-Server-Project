@@ -1,0 +1,6 @@
+sudo groupadd app_team
+sudo useradd -m -g app_team -s /bin/bash app_user
+sudo chown -R app_user:app_team /srv/appdata
+sudo chmod 770 /srv/appdata
+---
+drwxrwx--- 3 app_user app_team 4096 Nov 10 06:49 /srv/appdata

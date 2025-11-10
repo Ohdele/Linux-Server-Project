@@ -13,3 +13,8 @@
 3. **Filesystem and Mount:** Formatted the Logical Volume with `ext4` and mounted it to the dedicated service path `/srv/appdata`.
 4. **Verification (`df -h`):** Confirmed the LVM device (`/dev/mapper/vg_data-lv_apps`) is successfully mounted and ready for application data.
 **[View Output in task2-storage-setup.txt]**
+## User and Group Management
+### Objective: Configure dedicated users and groups with appropriate access controls.
+1. **Group and User Creation:** Created the `app_team` group and the dedicated system user `app_user` (`-g app_team`).
+2. **Security and Ownership:** Set the ownership of the LVM mount point (`/srv/appdata`) to `app_user:app_team` and applied restrictive permissions (`chmod 770`).
+3. **Verification:** Confirmed only the owner and group have read/write/execute permissions: `drwxrwx---`. **[View Output in task3-user-mgmt.txt]**
