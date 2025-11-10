@@ -22,3 +22,7 @@
 ### Objective: Demonstrate capability to install, update, and secure system packages.
 1. **Installation (`apt update/install`):** Installed the utility `tree` to verify package management functionality.
 2. **Security Verification:** Used `tree /srv/appdata` to intentionally trigger a permission error, confirming the `770` security controls set in the previous section are effective. **[View Output in task4-package-mgmt.txt]**
+## System Localization and Time Management
+### Objective: Configure time zone for professional server standards.
+1. **Timezone Configuration (`timedatectl`):** Verified the initial timezone (Europe/London) and changed it to **UTC** (Coordinated Universal Time).
+2. **Verification:** Confirmed the server now uses UTC time for all logging and scheduling, ensuring consistency across potentially distributed applications. **[View Output in task5-localization.txt]**

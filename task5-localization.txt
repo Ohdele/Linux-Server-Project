@@ -1,0 +1,19 @@
+timedatectl (Initial Check)
+               Local time: Mon 2025-11-10 07:41:46 UTC
+           Universal time: Mon 2025-11-10 07:41:46 UTC
+                 RTC time: Mon 2025-11-10 07:41:47
+                Time zone: UTC (UTC, +0000)
+System clock synchronized: yes
+              NTP service: active
+          RTC in local TZ: no
+---
+sudo timedatectl set-timezone UTC
+---
+timedatectl (Verification Check)
+               Local time: Mon 2025-11-10 07:41:46 UTC
+           Universal time: Mon 2025-11-10 07:41:46 UTC
+                 RTC time: Mon 2025-11-10 07:41:47
+                Time zone: UTC (UTC, +0000)
+System clock synchronized: yes
+              NTP service: active
+          RTC in local TZ: no
